@@ -14,7 +14,8 @@ export const AppContextProvider = (props) => {
     const currency = process.env.NEXT_PUBLIC_CURRENCY
     const router = useRouter()
 
-    const {user} = userUser() 
+    const user = userDummyData; 
+
 
     const [products, setProducts] = useState([])
     const [userData, setUserData] = useState(false)
